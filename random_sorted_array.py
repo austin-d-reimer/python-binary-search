@@ -1,7 +1,10 @@
 import random
 
 
-def create_random_sorted_array():
-    arr = random.sample(range(10000000), k=1000000)
+def create_random_sorted_array(max, length):
+    """
+    Creates a random sorted array with a set max number size and length.
+    """
+    arr = random.sample(range(max), k=length)
     arr.sort()
     return arr

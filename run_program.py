@@ -8,7 +8,7 @@ result, iteration = binary_search(arr, target)
 
 display_results(result, iteration, target)
 
-arr = create_random_sorted_array()
+arr = create_random_sorted_array(1_000_000, 50_000)
 target = arr[1200]
 
 result, iteration = binary_search(arr, target)
