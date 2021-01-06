@@ -1,7 +1,7 @@
 from random_sorted_array import create_random_sorted_array
 
 
-def display_results(result, iteration):
+def display_results(result, iteration, target):
     if result != -1:
         print(f"{target} found at {result} in {iteration} iterations")
     else:
@@ -27,11 +27,3 @@ def binary_search(arr, target):
         iteration = iteration + 1
     # Not found
     return -1, iteration - 1
-
-
-arr = [2, 3, 4, 10, 40, 45]
-target = 46
-
-result, iteration = binary_search(arr, target)
-
-display_results(result, iteration)
