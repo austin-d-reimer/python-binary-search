@@ -1,3 +1,6 @@
+import random_sorted_array
+
+
 def display_results(result, iteration):
     if result != -1:
         print(f"{target} found at {result} in {iteration} iterations")
