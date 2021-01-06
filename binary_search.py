@@ -1,4 +1,4 @@
-import random_sorted_array
+from random_sorted_array import create_random_sorted_array
 
 
 def display_results(result, iteration):
