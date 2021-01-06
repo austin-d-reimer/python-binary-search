@@ -1,3 +1,8 @@
+def search(arr, target):
+    result, iteration = binary_search(arr, target)
+    display_results(result, iteration, target)
+
+
 def display_results(result, iteration, target):
     if result != -1:
         print(f"{target} found at {result} in {iteration} iterations")
