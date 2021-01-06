@@ -1,3 +1,10 @@
+def display_results(result, iteration):
+    if result != -1:
+        print(f"{target} found at {result} in {iteration} iterations")
+    else:
+        print(f"{target} not found after {iteration} iterations")
+
+
 def binary_search(arr, target):
     """
     Search through an array of data using the binary search method.
@@ -20,11 +27,8 @@ def binary_search(arr, target):
 
 
 arr = [2, 3, 4, 10, 40, 45]
-target = 45
+target = 46
 
 result, iteration = binary_search(arr, target)
 
-if result != -1:
-    print(f"{target} found at {result} in {iteration} iterations")
-else:
-    print(f"{target} not found after {iteration} iterations")
+display_results(result, iteration)
